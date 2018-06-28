@@ -27,6 +27,38 @@ nav, .header {
 	width:100%;
 }
 
+.nbr_annonce {
+	color:#f56b2a;
+}
+/* ====================================== GESTION INPUT Place an Ad and Around Me =================================================== */
+
+#place_an_ad, #around_me {
+	margin:auto;
+	border-radius:3px;
+	width:260px;
+	min-height:25px;
+	text-decoration:none;
+}
+
+#place_an_ad {
+	background-color:#4183d7;
+	color:white;
+}
+
+#around_me {
+	color:#4138d7;
+	border:0.2px #4138d7 solid;
+	margin-top:10px;
+}
+
+#place_an_ad:hover {
+	background-color:#4138d7;
+	opacity:0.65;
+}
+
+#around_me:hover {
+	background-color:#80ffff;
+}
 /* Query for Tablet/smartphone */
 
 @media all and (max-height: 770px) {
@@ -77,6 +109,8 @@ ul h1 {
 
 #HiddenImg {
 	margin-left:-30px;
+	width:30px;
+	height:30px;
 }
 
 #HiddenUL li:hover ul {
@@ -108,6 +142,10 @@ ul h1 {
 }
 
 .column {
+	display:none;
+}
+
+.Partners {
 	display:none;
 }
 
