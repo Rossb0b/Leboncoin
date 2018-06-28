@@ -1,6 +1,6 @@
 html, body {
 	margin:0;
-	padding:2;
+	padding:0;
 }
 
 html, body {
@@ -8,28 +8,54 @@ html, body {
 	padding:0;
 }
 
-header {
-	display:flex;
-	flex-direction:row;
-	width:100%;
-}
-
 #container2 {
 	text-align:center;
 	text-align:justify;
+}
+
+#container2 a {
+	color:#369;
+	text-decoration:none;
+}
+
+#container2 a:hover {
+	text-decoration:underline;
+}
+
+nav, .header {
+	background-color:#f56b2a;
+	width:100%;
 }
 
 /* Query for Tablet/smartphone */
 
 @media all and (max-height: 770px) {
 
-.header {
-	margin:auto
+/* ================================================= Gestion Header + Hidden MENU ================================================================= */ 
+
+nav, .header {
+	display:flex;
+	flex-direction:row-reverse;
+	justify-content:flex-end;	
+}
+
+nav h1 {
+	color:white;
+	margin:auto;
+}
+
+.hidden a {
+	text-decoration:none;
+	color:#369;
+}
+
+.hidden a:hover {
+	color:#f56b2a;
 }
 
 #HiddenUL li {
 	list-style:none;
-	padding-bottom:12%;
+	margin-top:8%;
 }
 
 
@@ -55,9 +81,10 @@ ul h1 {
 
 #HiddenUL li:hover ul {
 	left:-2%;
-	height:100%;
-
+	height:500px;
 }
+
+/* =========================================================== Map + text Allign =================================================================== */
 
 #sub_container1, #map {
 	text-align:center;
@@ -75,6 +102,7 @@ ul h1 {
 	flex-direction:column;
 }	
 
+/* ====================================================== right and bottom List on Desktop only ==================================================== */
 #rightside {
 	display:none;
 }
@@ -82,6 +110,8 @@ ul h1 {
 .column {
 	display:none;
 }
+
+/* ======================================================================= Footer ================================================================== */
 
 .Cellfoot {
 	margin-top:5%;
