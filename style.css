@@ -187,60 +187,74 @@ ul h1 {
 #second_footer .footcontain {
 	display:none;
 }
+}
+
+
+
+
+
+
+
+
+
+
 
 /* ======================================================= Query for Desktop ================================================================ */
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 700px) {
 
 /* ============================================================ HEADER ================================================================== */
 
+#HiddenUL {
+	display:flex;
+}
 
 #HiddenUL h1 {
-	font-size:1.2em;
-	margin:auto;
+    font-size:1.2em;
 }
 
 #HiddenImg {
-	display:none;
+    display:none;
 }
 
 .hidden a, #HiddenUL ul {
-	color:white;
+    color:white;
 }
 
 .hidden a:hover {
-	text-decoration:underline;
+    text-decoration:underline;
 }
 
 #HiddenUL ul {
-	display:flex;
-	flex-direction:row;
+    display:flex;
+    flex-direction:row;
 }
 
 .hidden, #Connect {
-	display:flex;
-	justify-content:space-between;
-	margin:auto;
-	font-size:0.8em;
+    display:flex;
+    justify-content:space-between;
+    margin:auto;
+    font-size:0.8em;
 
 }
 
 #Connect {
-	border-left: 2px solid white;
-	border-right: 2px solid white;
-	height:4.5rem;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    height:4.5rem;
 }
 
 #Connect:hover, #Connect a:hover {
-	color:#f56b2a;
-	background-color:white;
+    color:#f56b2a;
+    background-color:white;
 }
 
 #Connect a {
-	color:white;
-	position:relative;
-	top:40%;
+    color:white;
+    position:relative;
+    top:40%;
 }
+
 
 /* ================================================= Nbr dep; inputs; map and right list ====================================================== */
 
@@ -377,7 +391,7 @@ ul h1 {
 	border-bottom:0.5px solid white;
 }
 
-.Cellfoot {
+#Cellfoot {
 	margin-top:10px;
 	display:flex;
 	flex-direction:row;

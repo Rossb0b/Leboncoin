@@ -1,0 +1,90 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+#container2 {
+    text-align:center;
+    text-align:justify;
+}
+
+#container2 a {
+    color:#369;
+    text-decoration:none;
+}
+
+#container2 a:hover {
+    text-decoration:underline;
+}
+
+nav, .header {
+    background-color:#f56b2a;
+    width:100%;
+}
+
+.nbr_annonce {
+    color:#f56b2a;
+}
+
+.hidden a, #Connect a {
+    text-decoration:none;
+}
+
+#HiddenUL li, #Connect {
+    list-style:none;
+}
+
+#HiddenUL {
+	display:flex;
+}
+
+#HiddenUL h1 {
+    font-size:1.2em;
+}
+
+#HiddenImg {
+    display:none;
+}
+
+.hidden a, #HiddenUL ul {
+    color:white;
+}
+
+.hidden a:hover {
+    text-decoration:underline;
+}
+
+#HiddenUL ul {
+    display:flex;
+    flex-direction:row;
+}
+
+.hidden, #Connect {
+    display:flex;
+    justify-content:space-between;
+    margin:auto;
+    font-size:0.8em;
+
+}
+
+#Connect {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    height:4.5rem;
+}
+
+#Connect:hover, #Connect a:hover {
+    color:#f56b2a;
+    background-color:white;
+}
+
+#Connect a {
+    color:white;
+    position:relative;
+    top:40%;
+}
