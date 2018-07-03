@@ -30,6 +30,15 @@ nav, .header {
 .nbr_annonce {
 	color:#f56b2a;
 }
+
+.hidden a, #Connect a {
+	text-decoration:none;
+}
+
+#HiddenUL li, #Connect {
+	list-style:none;
+}
+
 /* ====================================== GESTION INPUT Place an Ad and Around Me =================================================== */
 
 #place_an_ad, #around_me {
@@ -61,7 +70,7 @@ nav, .header {
 }
 /* Query for Tablet/smartphone */
 
-@media all and (max-height: 770px) {
+@media all and (min-width: 150px) {
 
 /* ================================================= Gestion Header + Hidden MENU ================================================================= */ 
 
@@ -76,16 +85,15 @@ nav h1 {
 	margin:auto;
 }
 
-.hidden a {
-	text-decoration:none;
+.hidden a, #Connect a {
 	color:#369;
 }
 
-.hidden a:hover {
+.hidden a:hover, #Connect a:hover {
 	color:#f56b2a;
 }
 
-#HiddenUL li {
+#HiddenUL li, #Connect {
 	list-style:none;
 	margin-top:8%;
 }
@@ -120,7 +128,7 @@ ul h1 {
 
 /* =========================================================== Map + text Allign =================================================================== */
 
-#sub_container1, #map {
+#sub_container1, #map, .Pick_dep {
 	text-align:center;
 }
 
@@ -128,7 +136,6 @@ ul h1 {
 	margin-left:5%;
 	width:90%;
 	min-height:50px;
-	text-align:center;
 }
 
 #sub_container1 a {
@@ -137,6 +144,7 @@ ul h1 {
 }	
 
 /* ====================================================== right and bottom List on Desktop only ==================================================== */
+
 #rightside {
 	display:none;
 }
@@ -151,7 +159,7 @@ ul h1 {
 
 /* ======================================================================= Footer ================================================================== */
 
-.Cellfoot {
+#Cellfoot {
 	margin-top:5%;
 	border-top: 1px black outset;
 	background-color:grey;
@@ -159,20 +167,245 @@ ul h1 {
 	width:100%;
 }
 
-.Cellfoot, .Cellfoot ul {
+#Cellfoot, #Cellfoot ul {
 	display:flex;
 	flex-direction:row;
 	list-style:none;
 	line-height:25px;
 }
 
-#footright {
+.footright {
 	position:absolute;
 	right:0;
 }
 
-#footright img {
+.footright img {
 	height:30px;
 	width:30px;
+}
+
+#second_footer .footcontain {
+	display:none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================= Query for Desktop ================================================================ */
+
+@media all and (min-width: 700px) {
+
+/* ============================================================ HEADER ================================================================== */
+
+#HiddenUL {
+	display:flex;
+}
+
+#HiddenUL h1 {
+    font-size:1.2em;
+}
+
+#HiddenImg {
+    display:none;
+}
+
+.hidden a, #HiddenUL ul {
+    color:white;
+}
+
+.hidden a:hover {
+    text-decoration:underline;
+}
+
+#HiddenUL ul {
+    display:flex;
+    flex-direction:row;
+}
+
+.hidden, #Connect {
+    display:flex;
+    justify-content:space-between;
+    margin:auto;
+    font-size:0.8em;
+
+}
+
+#Connect {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    height:4.5rem;
+}
+
+#Connect:hover, #Connect a:hover {
+    color:#f56b2a;
+    background-color:white;
+}
+
+#Connect a {
+    color:white;
+    position:relative;
+    top:40%;
+}
+
+
+/* ================================================= Nbr dep; inputs; map and right list ====================================================== */
+
+#container1 {
+	display:flex;
+}
+
+.Pick_dep {
+	display:none;
+}
+
+#sub_container1 {
+	display:flex;
+	flex-direction:column;
+	width:40%;
+}
+
+#place_an_ad, #around_me {
+	position:relative;
+	bottom:20%;
+}
+
+#around_me {
+	bottom:40%;
+}
+
+#sub_container1, #map {
+	text-align:center;
+}
+
+#rightside {
+	display:flex;
+}
+
+#rightside a {
+	color:#369;
+	text-decoration:none;
+}
+
+#rightside a:hover {
+	color:#f56b2a;
+}
+
+#rightside li {
+	display:flex;
+	justify-content:right;
+	list-style:none;
+	text-align:justify;
+	font-size:0.9em;
+}
+
+/* ============================================================================================================================================ */
+
+#container2 {
+	text-align:center;
+}
+
+/* ================================================================ FIRST FOOTER ================================================================== */
+
+#first_footer li, #second_footer li {
+	list-style:none;
+}
+
+#first_footer a {
+	text-decoration:none;
+	color:#369;
+}
+
+#first_footer a:hover {
+	text-decoration:underline;
+}
+
+#first_footer {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	font-size:0.8rem;
+	background-color:lightgrey;
+}
+
+.footcontain h2 {
+	border-bottom:0.2px solid grey;
+}
+
+.column {
+	display:flex;
+	flex-direction:column;
+	text-align:justify;
+}
+
+.column h2 {
+	font-size:0.8rem;
+	text-align:center;
+}
+
+/* ============================================================== SECOND FOOTER ================================================================= */
+
+#second_footer .footcontain, #second_footer .Partners {
+	display:flex;
+}
+
+#second_footer {
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	background-color:#474747;
+}
+
+#second_footer li:hover {
+	text-decoration:underline;
+}
+
+.footcontain {
+	display:flex;
+	flex-direction:column;
+}
+
+#second_footer a, #second_footer h2, #second_footer li {
+	text-decoration:none;
+	color:white;
+}
+
+#second_footer h2 {
+	font-size:0.8rem;
+}
+
+.Partners li {
+	display:inline-block;
+}
+
+.Partners {
+	border-top:0.5px solid white;
+	border-bottom:0.5px solid white;
+}
+
+#Cellfoot {
+	margin-top:10px;
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	justify-content:space-between;
+}
+
+.footright {
+	display:flex;
+	flex-direction:row;
+}
+
+.footright img {
+	height:45px;
+	width:45px;
 }
 }
